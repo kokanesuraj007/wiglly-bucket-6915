@@ -16,16 +16,16 @@ function myfunc(event) {
     alert("Create an Account");
   } else {
     var value = false;
-    UserData.forEach((element){
-      if (element.email == user.Email && element.userPd == user.Password) {
-        value = true;
-        let loginData = {
-          email: element.email,
-          fname: element.FirstName,
-          lname: element.LastName,
-        };
-        localStorage.setItem("user", JSON.stringify(loginData));
-      }
+    UserData.forEach((element) => {
+        if (element.email == user.Email && element.userPd == user.Password) {
+            value = true;
+            let loginData = {
+                email: element.email,
+                fname: element.FirstName,
+                lname: element.LastName,
+            };
+            localStorage.setItem("user", JSON.stringify(loginData));
+        }
     });
     if (value) {
       alert("Login Successful");

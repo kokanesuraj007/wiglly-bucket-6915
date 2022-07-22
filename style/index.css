@@ -1,0 +1,548 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+   height: 100vh;
+   background-position: center; 
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    z-index: 99;
+    box-shadow: 0 0 10px #0000;
+    background: rgba(233, 220, 220, 0.5)  
+}
+#check1{
+    display: none;
+}
+i{
+    color: #fff;
+    cursor: pointer;
+}
+.logo img{
+    width: 200px;
+    padding: 20px;
+}
+header .search-box{
+    flex: 1;
+    position: relative;
+
+}
+.search-box input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+    border-radius: 30px;
+    color: rgb(205, 195, 195);
+    font-size: 16px;
+    text-align: center;
+    /* padding-right: 40px; */
+
+}
+.search-box button{
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    border-radius:0px 20px 20px 0px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0.9);
+    background: black;
+    color: #fff;
+}
+header ul {
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: rgb(134, 33, 33);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+
+}
+header ul li a:hover{
+    border-bottom: 2px solid cadetblue;
+}
+.second-bar{
+    width: 100%;
+    height: 40px;
+    flex: 2;
+    display: flex;
+    align-items: center;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    background: rgb(248, 248, 250);
+}
+.second-bar li{
+    list-style: none;
+}
+.second-bar li a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 10px 15px;
+
+}
+#crauser{
+     width: 100vw;
+     position: relative;
+}
+#crauser{
+    width: 100%;
+}
+#topslid>button{
+    position: absolute;
+    top: 40%;
+    background-color: rgba(238, 234, 234, 0.5);
+    font-size: 1.5rem;
+    border-radius: 20px 20px;
+    border: 10px;
+    /* background-color: rgba(100, 100, 100, 0.5); */
+}
+#topslid button:nth-child(2){
+    left: 30px;
+}
+#topslid button:nth-child(3){
+    right: 30px;
+}
+.second_box>h2{
+       text-align: center;
+       padding: 10px;
+       font-weight: 500;
+       color: rgb(67, 64, 64);
+}
+.second_box_img>img{
+    width: 95%;
+    height: 302px;
+    display: block;
+    margin: auto;
+}
+.third_box_video_div>iframe{
+    display: block;
+    margin: auto;
+}
+.third_box>h2{
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(67, 64, 64);
+}
+/* fourth box starts */
+.fourth_box>h2{
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(67, 64, 64);
+}
+
+.fourth_box_slide_div{
+    display: flex;
+    width: 95%;
+    height: 380px;
+    cursor: pointer;
+    margin: auto;
+    justify-content: space-evenly;
+}
+.fourth_box_slide_div:hover .left,.right{
+    visibility: visible;
+}
+.fourth_box_slide_div:hover .right{
+    visibility: visible;
+}
+.best_seller_products{
+   
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+   justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+   overflow: hidden;
+}
+.idiv{
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: space-around;
+}
+.left,.right{
+    
+    font-size: 50px;
+    align-items: center;
+   visibility: hidden;
+   /* visibility: visible; */
+   color: black;
+   
+    
+}
+.four_pro_div{
+    width: 21%;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    height: 100%;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.four_pro_div:hover{
+    visibility: visible;
+}
+
+
+
+.pro_name{
+    font-size: 13px;
+    height: 40px;
+    font-weight: bold;
+    text-align: center;
+   
+    margin-top: 5px;
+}
+.pdiv{
+    display: flex;
+    align-items: center;
+   margin-top: 3px;
+    height: 20px;
+    
+    justify-content: center;
+}
+
+.text_tag{
+  
+    text-align: center;
+   box-sizing: border-box;
+   padding:  10px;
+   margin: auto;
+  margin-top: 8px;
+    background-color: #1f1f1f;
+    color: aliceblue;
+   
+}
+.ssprice_div{
+    display: flex;
+    height: 21px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 10px 0px 10px;
+}
+.stoffdiv{
+    display: flex;
+   
+    text-decoration: line-through;
+}
+#fifth-box>h2{
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(67, 64, 64);
+}
+.fourth_box_slide_div{
+    display: flex;
+    width: 95%;
+    height: 380px;
+    cursor: pointer;
+    margin: auto;
+    justify-content: space-evenly;
+}
+.fourth_box_slide_div:hover .left,.right{
+    visibility: visible;
+}
+.fourth_box_slide_div:hover .right{
+    visibility: visible;
+}
+.best_seller_products{
+   
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+   justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+   overflow: hidden;
+}
+.idiv{
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: space-around;
+}
+.left,.right{
+    
+    font-size: 50px;
+    align-items: center;
+   visibility: hidden;
+   /* visibility: visible; */
+   color: black;
+   
+    
+}
+.four_pro_div{
+    width: 21%;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    height: 100%;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.four_pro_div:hover{
+    visibility: visible;
+}
+#crauser3{
+    width: 100vw;
+     /* position: relative; */
+} 
+#crauser3{
+   width: 100%;
+}
+#fifth_box>button{
+   /* position: absolute;
+   top: 40%; */
+   background-color: rgba(238, 234, 234, 0.5);
+   font-size: 1.5rem;
+   border-radius: 20px 20px;
+   border: 10px;
+   /* background-color: rgba(100, 100, 100, 0.5); */
+}
+#fifth_box button:nth-child(2){
+   left: 30px;
+}
+#fifth_box button:nth-child(3){
+   right: 30px;
+}
+#fifth_box>h2{
+      text-align: center;
+      padding: 10px;
+      font-weight: 500;
+      color: rgb(67, 64, 64);
+}
+ .pro_name{
+    font-size: 13px;
+    height: 40px;
+    font-weight: bold;
+    text-align: center;
+   
+    margin-top: 5px;
+}
+.pdiv{
+    display: flex;
+    align-items: center;
+   margin-top: 3px;
+    height: 20px;
+    
+    justify-content: center;
+}
+
+.text_tag{
+  
+    text-align: center;
+   box-sizing: border-box;
+   padding:  10px;
+   margin: auto;
+  margin-top: 8px;
+    background-color: #1f1f1f;
+    color: aliceblue;
+   
+}
+.ssprice_div{
+    display: flex;
+    height: 21px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 10px 0px 10px;
+}
+.stoffdiv{
+    display: flex;
+   
+    text-decoration: line-through;
+} */
+.sixth_box:hover .abs{
+    visibility: visible; 
+/* }
+.tenth_box:hover .abs{
+    visibility: visible; 
+}
+.sixteenth_box:hover .abs{
+    visibility: visible;  */
+}
+.sixth_box{
+    position: relative;
+}
+.sixth_box_slide_div{
+    /* border: 1px solid; */
+    display: flex;
+    /* gap: 20px; */
+    height: 400px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.seventh_box > img{
+    width: 100%;
+    height: 308px;
+    cursor: pointer;
+}
+
+.slider{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 30%;
+    height: 330px;
+    box-sizing: border-box;
+    overflow: visible;
+    /* padding: 20px 20px 25px 25px; */
+}
+.sliding_div{
+    /* border: 1px solid; */
+    /* width: 421px; */
+    width: 100%;
+    height: 230px;
+     box-sizing: border-box;
+}
+#crauserr{
+    width: 100vw;
+     /* position: relative; */
+} 
+#crauserr{
+   width: 100%;
+}
+#nwslid>button{
+   /* position: absolute;
+   top: 40%; */
+   background-color: rgba(238, 234, 234, 0.5);
+   font-size: 1.5rem;
+   border-radius: 20px 20px;
+   border: 10px;
+   /* background-color: rgba(100, 100, 100, 0.5); */
+}
+#nwslid button:nth-child(2){
+   left: 30px;
+}
+#nwslid button:nth-child(3){
+   right: 30px;
+}
+#nwslid>h2{
+      text-align: center;
+      padding: 10px;
+      font-weight: 500;
+      color: rgb(67, 64, 64);
+}
+/* video part  */
+
+.eighth_box_video_div{
+    width: 1263px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.vidSlider{
+    overflow: visible;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 1263px;
+        margin: auto;
+}
+.videoshorts{
+    height: 100%;
+        width: 240px;
+        overflow: visible;
+        border-radius: 20px;
+        margin-right: 10px;
+    
+}
+.controls{
+
+
+    position: absolute;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 30px;
+    visibility: hidden;
+
+}
+.Lcont,.Rcont{
+    height: 40px;
+    width: 40px;
+   
+}
+
+
+.eighth_box:hover .controls{
+    visibility: visible; 
+    cursor: pointer; 
+}
+.eighth_box>h2{
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(67, 64, 64);
+}
+.ninth_box_slide_div{
+    display: flex;
+    width: 95%;
+    height: 360px;
+    cursor: pointer;
+    margin: auto;
+    justify-content: space-evenly;
+}
+.tenth_box:hover .abs{
+    visibility: visible; 
+}
+.sixth_box,.tenth_box{
+    position: relative;
+}
+.sixth_box_slide_div,.tenth_box_slide_div{
+    /* border: 1px solid; */
+    display: flex;
+    height: 266px;
+    width: 1263px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+/* .slider{
+    /* border: 1px solid red; */
+    /* display: flex;
+    width: 1263px;
+    height: 266px;
+    box-sizing: border-box;
+    overflow: visible;
+}
+.sliding_div{
+    /* border: 1px solid; */
+    /* width: 421px;
+    height: 266px;
+     box-sizing: border-box; */ 
+/* }  */
+
+
+
+
