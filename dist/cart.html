@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- poppins font -->
+    <link
+      rel="shortcut icon"
+      href=""
+      type="image/png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/0122b4412d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body * {
+        font-family: "Poppins", sans-serif;
+      }
+      input {
+        margin-top: 5px;
+        height: 47px !important;
+        width: 110px;
+        background-color: aliceblue;
+      }
+      [type="search"] {
+        padding: 6px;
+        width: 50%;
+        background-color: currentColor;
+      }
+
+      .para {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 300;
+        color: #212529;
+        padding: 20px 0px;
+        background-color: #f8f9fa;
+
+        font-family: "Quicksand", sans-serif;
+      }
+      a {
+        text-decoration: none;
+        color: #1f1f1f;
+      }
+      body img,
+      button,
+      i:hover {
+        cursor: pointer;
+      }
+      /* *{
+            background-color: #f8f9fa;
+        } */
+      #cont {
+        margin-top: 60px;
+      }
+      #container {
+        display: flex;
+        width: 100%;
+        height: 70px;
+        justify-content: space-around;
+        align-items: center;
+
+        background-color: #f8f9fa;
+      }
+      #container > div {
+        display: flex;
+      }
+      #container > #inputdiv {
+        width: 50%;
+      }
+      #inputdiv > #searchBar {
+        border-radius: 30px 0px 0px 30px;
+        width: 80%;
+        padding: 8px 0px 10px -15px;
+        border: 0px;
+
+        padding: 3px;
+      }
+
+      #loginimg {
+        height: 28px;
+        margin-top: 10px;
+      }
+
+      #icon > img,
+      i {
+        height: 15px;
+        margin: 5px;
+      }
+      #icon i {
+        color: #495057;
+      }
+      #icon {
+        margin-right: -50px !important;
+      }
+      /* dropdoun menu */
+
+      #maindropdown {
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+        padding: 10px 0px;
+      }
+      #dropdown-container {
+        width: 50%;
+        height: 40px;
+
+        display: flex;
+        justify-content: center;
+      }
+      #dropdown-container > div {
+        box-sizing: border-box;
+        width: 16%;
+      }
+
+      .dropdownBox {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        margin-top: 8px;
+        color: #495057;
+      }
+      .dropdownBox a {
+        font-size: 14px;
+        color: #4d6276;
+        text-decoration: none;
+      }
+
+      #dropdown-container {
+        width: 50%;
+        height: 60px;
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .dropdownBox a:hover {
+        text-shadow: 1px 1px 5px grey;
+      }
+
+      /* last black page */
+
+      #black {
+        width: 100%;
+        height: 645px;
+        background-color: black;
+        color: white;
+        margin-top: 50px;
+      }
+      #black .color {
+        color: #999999;
+      }
+      #black .color:hover {
+        color: white;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      #black > div:nth-child(1) {
+        width: 100%;
+        height: 120px;
+      }
+      #black > div > div {
+        width: 120px;
+        height: 120px;
+        margin: auto;
+      }
+      #black > div > div > img {
+        width: 100%;
+        height: 100%;
+      }
+      #black > div:nth-child(2) {
+        width: 100%;
+        height: 20px;
+        display: flex;
+        margin: auto;
+      }
+      #black > div > .IconList {
+        width: 30%;
+        height: 20px;
+        display: flex;
+      }
+
+      #black > div > .IconList > div {
+        width: 12%;
+        height: 20px;
+        margin: auto;
+        /* border: blue solid 1px; */
+      }
+      #black > div > .IconList > div > img {
+        width: 100%;
+        height: 100%;
+      }
+
+      #black > .blackPara {
+        width: 90%;
+        height: 40px;
+        display: flex;
+        margin: auto;
+        margin-top: 30px;
+        /* border: red solid 1px; */
+      }
+      .blackPara > div > p {
+        text-align: left;
+        color: white;
+      }
+      #black > .blackPara > div {
+        width: 50%;
+        height: 100%;
+        /* border: rgb(7, 155, 7) solid 1px  */
+      }
+      #black > div:nth-child(4) {
+        width: 90%;
+        height: 60px;
+        display: flex;
+
+        margin: auto;
+        /* border: red solid 1px; */
+      }
+      #black > #playStore > div {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        /* border: blue solid 1px; */
+      }
+      #black > #playStore > div > input {
+        font-size: 16px;
+        /* color:white; */
+        padding: 10px 40px 10px 0px;
+        background-color: black;
+        border: 0px;
+        border-bottom: white solid 2px;
+      }
+      #black > #playStore > div > button {
+        padding: 10px;
+        font-size: 16px;
+        background-color: #fc2779;
+        border: 0px;
+        border-radius: 5px;
+        color: white;
+      }
+      #black > #playStore > div > div {
+        width: 36%;
+        height: 100%;
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+
+        font-size: 16px;
+      }
+      #black > #playStore > div > div > img {
+        width: 100px;
+        height: 30px;
+      }
+      #black > p:nth-child(5) {
+        margin-left: 65px;
+      }
+      #black > div:nth-child(6) {
+        width: 70%;
+        height: 50px;
+      }
+
+      #black > #title > div {
+        width: 86%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: blue solid 1px; */
+        /* color: white;         */
+      }
+      #black > p:nth-child(7) {
+        margin-left: 65px;
+      }
+      #black > div:nth-child(8) {
+        width: 90%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        /* border:red solid 1px; */
+      }
+      #black > #contact > div {
+        width: 20%;
+        height: 100%;
+        /* border: blue solid 1px;; */
+      }
+      #black > #contact > div > p {
+        line-height: 5px;
+      }
+      #black > #contact > div > p > img {
+        width: 15px;
+        height: 15px;
+      }
+      #black > div:nth-child(9) {
+        width: 95%;
+        height: 50px;
+
+        margin: auto;
+        border: 0px;
+        border-bottom: #6d8b99 solid 1px;
+      }
+      #black > div:nth-child(10) {
+        width: 90%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        /* border:red solid 1px; */
+      }
+      .cursor > p > u > a {
+        text-decoration: none;
+      }
+
+      #conta {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 50px;
+      }
+
+      .addcart {
+        margin-left: 20px;
+      }
+
+      .symbol {
+        display: inline;
+      }
+
+      .color-1 {
+        font-size: 10px;
+      }
+      #black > #contact > div > p {
+        line-height: 14px;
+      }
+      .color-1 {
+        font-size: 12px;
+        color: #a5a5a5;
+      }
+
+      .cursor > p > u > a {
+        text-decoration: none;
+      }
+
+      #smart {
+        display: grid;
+        grid-column: 1fr, 1fr;
+      }
+
+      #count2 {
+        background-color: black;
+        height: 500px;
+        width: 100%;
+      }
+
+      #cont {
+        display: grid;
+      }
+
+      .box > img {
+        height: 100px;
+        margin-right: 50px;
+      }
+
+      .box > p {
+        font-size: 12px;
+        margin-right: 50px;
+      }
+
+      .priceTag {
+        font-weight: bold;
+      }
+
+      .box {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        width: 50%;
+        margin-left: 50px;
+      }
+      button {
+        margin-top: 5px;
+        height: 46px;
+        width: 96px;
+      }
+      .left {
+        color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        width: 24%;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        /* margin-bottom: 20px; */
+      }
+      .man {
+        padding-top: 20px !important;
+      }
+
+      input {
+        margin-top: 5px;
+        height: 40px;
+        width: 110px;
+      }
+
+      .addBut {
+        margin-left: 0px;
+      }
+      .top {
+        height: 50px !important;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/6f02e62be7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/navbar.css" />
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <div id="navbar"></div>
+    <!-- ------------------------------- -->
+    <!-- <p></p> -->
+
+    <!-- last black page  -->
+
+    <!-- border -->
+    <div><a href="index.html"> GO TO Product Page</a></div>
+
+    <div id="cont"></div>
+    <div id="cont2"></div>
+  </body>
+</html>
+
+<script>
+  var cartData = JSON.parse(localStorage.getItem("cart-page"));
+
+  var total = cartData.reduce(function (sum, ele, index, arr) {
+    debugger;
+    return (sum) + (ele.price);
+  }, 0);
+
+  console.log(total);
+  var quantitiy = cartData.length;
+
+  cartData.map(function (ele, index) {
+    var box = document.createElement("div");
+    box.className = "box";
+
+    var img = document.createElement("img");
+    img.src = ele.image_url;
+    img.className = "productImage";
+
+    var name = document.createElement("p");
+    name.textContent = ele.name;
+
+    var price = document.createElement("p");
+    price.innerText = "Rs." + ele.price;
+    price.className = "priceTag";
+
+    var btn = document.createElement("button");
+    btn.innerText = "Remove";
+    btn.style.cursor = "pointer";
+    // btn.type = Number;
+
+    btn.addEventListener("click", function () {
+      removeItem(ele, index);
+    });
+
+    var qty = document.createElement("input");
+
+    qty.placeholder = "Quantity";
+
+    var addBtn = document.createElement("button");
+    addBtn.innerText = "Add";
+    addBtn.style.backgroundColor = "black";
+    addBtn.style.color = "white";
+    addBtn.className = "addBut";
+
+    addBtn.addEventListener("click", function () {
+      addItem(ele, index, qty);
+    });
+
+    box.append(img, name, price, qty, addBtn, btn);
+
+    document.querySelector("#cont").append(box);
+  });
+
+  function removeItem(ele, index) {
+    cartData.splice(index, 1);
+    localStorage.setItem("cart-page", JSON.stringify(cartData));
+    window.location.reload();
+  }
+  function addItem(ele, index, qty) {
+    if (qty.value <= 0) {
+      ele.price = ele.price * 1;
+    } else {
+      ele.price = ele.price * Number(qty.value);
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cartData));
+    window.location.reload();
+  }
+
+  var box3 = document.createElement("div");
+  box3.style.height = "50px";
+  box3.style.width = "400px";
+  box3.style.width = "100%";
+  box3.style.backgroundColor = "black";
+  box3.style.display = "flex";
+
+  var para = document.createElement("p");
+  // para.style.textAlign = "left";
+  para.style.marginTop = "5px";
+  para.style.marginLeft = "100px";
+  para.style.color = "white";
+  para.style.paddingTop = "13px";
+  para.style.fontWeight = "bold";
+
+  var checkOut = document.createElement("button");
+  checkOut.innerText = "Check Out";
+  checkOut.addEventListener("click", function () {
+    location.href = "checkout.html";
+  });
+  //   checkout.addEventListener("click",myfunction)
+
+  checkOut.style.marginLeft = "500px";
+  checkOut.style.marginTop = "2px";
+  checkOut.style.width = "100px";
+
+  box3.append(para, checkOut);
+
+  para.innerText = `You have ${quantitiy} Item and Total price is Rs - ${total}`;
+
+  document.querySelector("#cont2").append(box3);
+
+  checkOut.addEventListener("click", myfunction);
+  function myfunction() {
+    window.location.href = "checkout.html";
+  }
+</script>
+
+<script type="module">
+  // import footer from "./components/footer.js";
+  import navbar from "./components/navbar.js";
+  // document.getElementById("footer").innerHTML = footer();
+  document.getElementById("navbar").innerHTML = navbar();
+</script>

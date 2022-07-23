@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: auto;
+          gap: 20px 25px;
+          padding: 50px;
+        }
+        #container > div {
+          text-align: center;
+          border-radius: 0;
+  
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        #container > div > img {
+          width: 70%;
+          padding-top: 20px;
+        }
+        button {
+          width: 320px;
+          height: 25px;
+          border: 0;
+          background-color: black;
+          color: white;
+        }
+        @media only screen and (min-width: 481px) and (max-width: 781px) {
+          #container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+          }
+        }
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          #container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+    </style>
+</head>
+<body>
+    <div id="filter">
+        <img id="sort" src="https://in.sugarcosmetics.com/desc-images/sortIcon.png" alt="sort">
+        <span id="filter1">
+            <select name="" id="select2">
+            <option value="none">Sort</option>
+            <option value="htl">High to Low</option>
+            <option value="lth">Low to High</option>
+            <!-- <option value="rating">rating High to low</option> -->
+        </select>
+           
+        </span>
+    </div>
+    <div id="container"></div>
+    
+</body>
+<script>
+    skincareData=[
+  
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-aquaholic-water-boost-mask-13548848087123.jpg?v=1619115321",
+name: "Aquaholic Water Boost Mask",
+price: "Rs:149",
+rating: "4.7(414)",
+strike: ""},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-citrus-got-real-cooling-stick-28037939429459.jpg?v=1644409181",
+name: "Citrus Got Real Cooling Stick",
+price: "Rs:399",
+rating: "4.6(141)",
+strike: ""},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-cheat-sheet-clarifying-mask-12775754203219.jpg?v=1619113702",
+name: "Cheat Sheet Clarifying Mask",
+price: "Rs:99",
+rating: "4.9(121)",
+strike: ""},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-charcoal-patrol-bubble-mask-12775750500435.jpg?v=1644399394",
+name: "Charcoal Patrol Bubble Mask",
+price: "Rs:149",
+rating: "4.9(41)",
+strike: ""},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-cheat-sheet-anti-aging-mask-12775753744467.jpg?v=1619113715",
+name: "Cheat Sheet Anti-Aging Mask",
+price: "Rs:99",
+rating: "4.8(142)",
+strike: ""},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/CCEyeFirmingCreamWBG-3.jpg?v=1628610287",
+name: "Coffee Culture Eye Firming Cream",
+price: "Rs:399",
+rating: "4.9(54)",
+strike: "RS.799"},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/Aquaholic-Extention-Spot-gel-2.jpg?v=1626363976",
+name: "Aquaholic Clarifying Spot Gel",
+price: "Rs:399",
+rating: "4.7(421)",
+strike: ""},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-swipe-right-cleansing-water-12771592732755.jpg?v=1619106450",
+name: "Swipe Right Cleansing Water",
+price: "Rs:399",
+rating: "4.9(197)",
+strike: ""},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-acne-combo-pack-of-6-14056089157715.jpg?v=1619113757",
+name: "Acne Combo (Pack of 6)",
+price: "Rs:399",
+rating: "4.9(137)",
+strike: "1299"},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/CCPorePurifyingMaskWBG-3.jpg?v=1628610298",
+name: "Coffee Culture Pore Purifying Mask",
+price: "Rs:499",
+rating: "4.7(421)",
+strike: "1399"},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/Aquaholic-Pore-Exfoliating-Scrub-3_1.jpg?v=1626363966",
+name: "Aquaholic Pore Exfoliating Scrub",
+price: "Rs:399",
+rating: "4.9(14)",
+strike: ""},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-citrus-got-real-refreshing-mist-28037990842451.jpg?v=1619155739",
+name: "Citrus Got Real Refreshing Mist",
+price: "Rs:799",
+rating: "4.8(201)",
+strike: "2100"},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/CCBrighteningSerumWBG-3.jpg?v=1628610327",
+name: "Coffee Culture Brightening Serum",
+price: "Rs:399",
+rating: "4.6(137)",
+strike: ""},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-cheat-sheet-clarifying-mask-pack-of-6-12784634527827.jpg?v=1619114589",
+name: "Cheat Sheet Clarifying Mask (Pack of 6)",
+price: "Rs:399",
+rating: "4.8(27)",
+strike: ""},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/Hydrating-Primer-3.jpg?v=1626423647",
+name: "Aquaholic Hydrating Primer",
+price: "Rs:999",
+rating: "4.5(421)",
+strike: "RS.1199"},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/moisturiser.jpg?v=1626968292",
+name: "Aquaholic Priming Moisturizer",
+price: "Rs:799",
+rating: "4.8(421)",
+strike: "RS.999"},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/373532210-artboard-1.jpg?v=1646149967",
+name: "Citrus Got Real Retinol Brightening Serum",
+price: "Rs:1499",
+rating: "4.5(421)",
+strike: "RS.1799"}
+    ]
+</script>
+<script>
+    let container = document.getElementById("container");
+    let cartLs = JSON.parse(localStorage.getItem("cart-page")) || [];
+    Display(skincareData);
+    document
+    Display(skincareData);
+    function Display(data) {
+      data.forEach(function (ele) {
+        let product = document.createElement("div");
+        let image_url = document.createElement("img");
+        image_url.src = ele.image_link;
+
+        let name = document.createElement("h5");
+        name.textContent = ele.name;
+
+        let price = document.createElement("h5");
+        price.textContent = ele.price;
+
+        let rating = document.createElement("h5");
+        rating.textContent = ele.Rating;
+
+        let cart = document.createElement("button");
+        cart.textContent = "Add To Cart";
+        cart.addEventListener("click", function () {
+          AddToCart(ele);
+        });
+
+        product.append(image_url, name, price,rating, cart);
+        container.append(product);
+      });
+    }
+    Display(skincareData);
+
+    function AddToCart(product) {
+      for (let i = 0; i < cartLs.length; i++) {
+        if (cartLs[i].image_url === product.image_link) {
+          alert("product already in the cart");
+          return;
+        }
+      }
+      cartLs.push(product);
+      alert("Product Added Successfully");
+      //console.log(cartLs)
+      localStorage.setItem("cart-page", JSON.stringify(cartLs));
+    }
+
+</script>
+</html>

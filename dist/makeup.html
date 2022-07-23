@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 20px 25px;
+        padding: 50px;
+      }
+      #container > div {
+        text-align: center;
+        border-radius: 0;
+
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+      #container > div > img {
+        width: 70%;
+        padding-top: 20px;
+      }
+      button {
+        width: 320px;
+        height: 25px;
+        border: 0;
+        background-color: black;
+        color: white;
+      }
+      @media only screen and (min-width: 481px) and (max-width: 781px) {
+        #container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        #container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="filter">
+        <img id="sort" src="https://in.sugarcosmetics.com/desc-images/sortIcon.png" alt="sort">
+        <span id="filter1">
+            <select name="" id="select2">
+            <option value="none">Sort</option>
+            <option value="htl">High to Low</option>
+            <option value="lth">Low to High</option>
+            <!-- <option value="rating">rating High to low</option> -->
+        </select>
+           
+        </span>
+    </div>
+    <div id="container"></div>
+    </div>
+  </body>
+  <script>
+    var makeupData = [
+      {
+        image_url:
+          "https://cdn.shopify.com/s/files/1/0906/2558/products/1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg?v=1645608270",
+        name: "MATTE ATTACK TRANSFERPROOF LIPSTICK",
+        price: "Rs.699",
+        Rating: -4.7,
+      },
+      {
+        image_url:
+          "https://cdn.shopify.com/s/files/1/0906/2558/products/1_51afaa84-af89-42b5-bdb8-a51b01257bc0.jpg?v=1639582607",
+        name: "CONTOUR DE FORCE FACE PALETTE",
+        price: "Rs.799",
+        Rating: -"4.7",
+      },
+      {
+        image_url:
+          "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-all-set-to-go-banana-powder-13289662218323.jpg?v=1619115199",
+        name: "ALL SET TO GO BANANA POWDER",
+        price: "Rs.599",
+        Rating: -"4.8",
+      },
+      {
+        image_url:
+          "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg?v=1619102626",
+        name: "CONTOUR DE FORCE MINI BLUSH",
+        price: "Rs.349",
+        Rating: -"4.8",
+      },
+      {
+        image_url:
+          "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-goddess-of-flawless-spf30-bb-cream-07-vanilla-latte-fair-12796432941139.jpg?v=1619114695",
+        name: "GODDESS OF FLAWLESS SPF3O+BB CREAM",
+        price: "Rs.699",
+        Rating: -"4.7",
+      },
+      {
+        image_url:
+          "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-contour-de-force-mini-bronzer-01-taupe-topper-cool-toned-brown-gray-undertone-11020228624467.jpg?v=1619102678",
+        name: "CONTOUR DE FORCRE MINI BRONZER",
+        price: "Rs.399",
+        Rating: -"4.7",
+      },
+      {
+        image_url:
+          "https://cdn.shopify.com/s/files/1/0906/2558/products/1_6_450a8655-59a5-41d8-9fca-5dd95d128534.jpg?v=1658418866",
+        name: "EYE WAREND SO! DOUBLE MATTE EYELINER",
+        price: "Rs.699",
+        Rating: -"4.8",
+      },
+      {
+        image_url:
+          "https://cdn.shopify.com/s/files/1/0906/2558/products/01_5e8187e3-f7a2-40aa-a759-d4bf69769234.jpg?v=1639496327",
+        name: "KOHL OF HONOUR INTENSE KAJAL -01 BLACK OUT(BLACK)",
+        price: "Rs.249",
+        Rating: -"4.8",
+      },
+      {
+        image_url:
+          "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-uptown-curl-lengthening-mascara-01-black-beauty-black-28122637828179.jpg?v=1619106532",
+        name: "UPTOWN CURL LENGTHENING MASCARA-01 BLACK BEAUTY(BLACK)",
+        price: "Rs.499",
+        Rating: -"4.8",
+      },
+      {
+        image_url:
+          "https://cdn.shopify.com/s/files/1/0906/2558/products/1_ef579f2e-602e-4d2f-bed2-bf0efdf4f184.jpg?v=1644325813",
+        name: "SMUDGE ME NOT LIQUID LIPISTICK",
+        price: "Rs.499",
+        Rating: -"4.8",
+      },
+      {
+        image_url:
+          "https://cdn.shopify.com/s/files/1/0906/2558/products/01_59809bd6-49ef-4c6b-b262-47002bedc963.jpg?v=1639755559",
+        name: "BLEND THE RULES EYESHADOW PALETTE",
+        price: "Rs.1199",
+        Rating: -"4.8",
+      },
+      {
+        image_url:
+          "https://cdn.shopify.com/s/files/1/0906/2558/products/01_d6ffec78-c2b6-4466-8672-233fee0285a8.jpg?v=1644394232",
+        name: "MATTE AS HELL CRAYON LIPSTICK",
+        price: "Rs.799",
+        Rating: -"4.8",
+      },
+      {
+        image_url:
+          "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-contour-de-force-mini-blush-02-pink-pinnacle-deep-rose-12785043669075.jpg?v=1619102659",
+        name: "CONTOUR DE FORCE MINI BLUSH-02 PINK PINNACLE (DEEP ROSE)",
+        price: "Rs.349",
+        Rating: -"5",
+      },
+      {
+        image_url:
+          "https://cdn.shopify.com/s/files/1/0906/2558/products/1_529c20ee-c872-4029-9702-8580d7b9a66f.jpg?v=1640178644",
+        name: "ACE OF FACE FOUNDATION STICK",
+        price: "Rs.999",
+        Rating: -"4.8",
+      },
+      {
+        image_url:
+          "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-dream-cover-spf15-mattifying-compact-10-latte-12775602356307.jpg?v=1619106501",
+        name: "DREAM COVER SPF15 MATTIFYING COMPACT",
+        price: "Rs.499",
+        Rating: -"4.7",
+      },
+      {
+        image_url:
+          "https://cdn.shopify.com/s/files/1/0906/2558/products/1_2d186f9b-9024-4e23-a0d2-a55b7671e89c.jpg?v=1657123108",
+        name: "CONTOUR DE FORCE EYE AND FACE PALETTE",
+        price: "Rs.1099",
+        Rating: -"",
+      },
+    ];
+  </script>
+  <script>
+    let container = document.getElementById("container");
+    let cartLs = JSON.parse(localStorage.getItem("cart-page")) || [];
+    Display(makeupData);
+    document
+    // .querySelector("#filter").addEventListener("change",usedFilter)
+    // function usedFilter(){
+    //     let pPrice=document.querySelector("#filter").value;
+    //     let filterList=makeupData.filter(function(ele){
+    //         return ele.price==pPrice
+    //     })
+    //     console.log(filterList)
+    //     Display(filterList)
+    // }
+    // document.getElementById("select2").addEventListener("change",function(){
+
+    //     if(this.value=="htl"){
+    //         var  Htl =makeupData.sort(function(a,b){
+    //             return b.price-a.price;
+    //         })
+    //         append(Htl);
+    //     }
+    //     else if(this.value=="lth"){
+    //         var  Lth =makeupData.sort(function(a,b){
+    //             return a.price-b.price;
+    //         })
+    //       append(Lth);
+    //     }
+       
+    
+    // })
+     
+
+    Display(makeupData);
+    function Display(data) {
+      data.forEach(function (ele) {
+        let product = document.createElement("div");
+        let image_url = document.createElement("img");
+        image_url.src = ele.image_url;
+
+        let name = document.createElement("h5");
+        name.textContent = ele.name;
+
+        let price = document.createElement("h5");
+        price.textContent = ele.price;
+
+        let rating = document.createElement("h5");
+        rating.textContent = ele.Rating;
+
+        let cart = document.createElement("button");
+        cart.textContent = "Add To Cart";
+        cart.addEventListener("click", function () {
+          AddToCart(ele);
+        });
+
+        product.append(image_url, name, price, cart);
+        container.append(product);
+      });
+    }
+    Display(makeupData);
+
+    function AddToCart(product) {
+      for (let i = 0; i < cartLs.length; i++) {
+        if (cartLs[i].image_url === product.image_url) {
+          alert("product already in the cart");
+          return;
+        }
+      }
+      cartLs.push(product);
+      alert("Product Added Successfully");
+      //console.log(cartLs)
+      localStorage.setItem("cart-page", JSON.stringify(cartLs));
+    }
+  </script>
+</html>

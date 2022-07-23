@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Beauty products at Sugar cosmetics</title>
+
+    <script
+      src="https://kit.fontawesome.com/cc7490e492.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="https://media.sugarcosmetics.com/upload/Logo-static-03.jpg"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="style/shipping.css" />
+  </head>
+  <body>
+    <div class="kContent">
+      <div class="kMain">
+        <div class="kcHead">
+          <a class="logo logoCenter" href="./index.html"
+            ><img
+              alt="sugar cosmetic"
+              class="logoImage logoImageMedium"
+              src="https://media.sugarcosmetics.com/upload/Logo-static-03.jpg"
+          /></a>
+          <div class="breadCrumb">
+            <p class="kFirst">Cart</p>
+            <i class="fa-solid fa-chevron-right"></i>
+            <p class="kSecond">Information</p>
+            <i class="fa-solid fa-chevron-right"></i>
+            <p class="kThird">Shipping</p>
+            <i class="fa-solid fa-chevron-right"></i>
+            <p class="kFourth">Payment</p>
+          </div>
+        </div>
+        <div class="kAddressshow">
+          <div class="kcontactShow">
+            <p>Contact</p>
+            <p id="userEmail"></p>
+            <p class="pinkColor">change</p>
+          </div>
+          <!-- <hr /> -->
+          <div class="kShipto">
+            <p>Shipping</p>
+            <p id="shipmentAddress"></p>
+            <p class="pinkColor">change</p>
+          </div>
+        </div>
+        <div class="kshipMethod">
+          <p>Shipping method</p>
+          <div class="methodsHere">
+            <div>
+              <input type="radio" />
+              <label>Standard (3-5 Business Days)</label>
+            </div>
+            <p>Free</p>
+          </div>
+        </div>
+        <div class="kcSubmit">
+          <div class="kcreturnLink">
+            <svg
+              focusable="false"
+              aria-hidden="true"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 10 10"
+            >
+              <path d="M8 1L7 0 3 4 2 5l1 1 4 4 1-1-4-4"></path>
+            </svg>
+            <span id="returnCart">Return to cart</span>
+          </div>
+          <div class="kcontinueBtn">
+            <button id="submit">Continue to shipping</button>
+          </div>
+        </div>
+        <hr />
+        
+      </div>
+      <aside id="sideBar" class="kAside"></aside>
+    </div>
+  </body>
+</html>
+<script type="module">
+</script>
+<script src="script/shipping.js"></script>
+<script src="script/asideFunction.js" type="module"></script>

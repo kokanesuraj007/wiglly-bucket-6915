@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Beauty products at Sugar cosmetics</title>
+
+    <script
+      src="https://kit.fontawesome.com/cc7490e492.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="https://media.sugarcosmetics.com/upload/Logo-static-03.jpg"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="style/payment.css" />
+  </head>
+  <body>
+    <div class="kContent">
+      <div class="kMain">
+        <div class="kcHead">
+          <a class="logo logoCenter" href="./index.html"
+            ><img
+              alt="sugarcosmetics"
+              class="logoImage logoImageMedium"
+              src="https://media.sugarcosmetics.com/upload/Logo-static-03.jpg"
+          /></a>
+          <div class="breadCrumb">
+            <p class="kFirst">Cart</p>
+            <i class="fa-solid fa-chevron-right"></i>
+            <p class="kSecond">Information</p>
+            <i class="fa-solid fa-chevron-right"></i>
+            <p class="kThird">Shipping</p>
+            <i class="fa-solid fa-chevron-right"></i>
+            <p class="kFourth">Payment</p>
+          </div>
+        </div>
+        <div class="kAddressshow">
+          <div class="kcontactShow">
+            <p>Contact</p>
+            <p id="userEmail"></p>
+            <p class="pinkColor">change</p>
+          </div>
+
+          <div class="kShipto">
+            <p>Shipping</p>
+            <p id="shipmentAddress"></p>
+            <p class="pinkColor">change</p>
+          </div>
+          <div class="kpshipMethod">
+            <p>Method</p>
+            <p>Free Shipping (Cash on Delivery) · Free</p>
+            <p></p>
+          </div>
+        </div>
+        <div class="kpaymentMethod">
+          <p>Payment</p>
+          <span>All transactions are secure and encrypted.</span>
+          <div class="kpaymentDesign">
+            <div class="cardPaymentmeth">
+              <div>
+                <input type="radio" name="btn" id="cardsPayment" checked />
+                <label for="">Cards</label>
+              </div>
+              <div class="paymentCards">
+                <img
+                  src="https://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg"
+                  alt=""
+                />
+                <img
+                  src="https://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/master-173035bc8124581983d4efa50cf8626e8553c2b311353fbf67485f9c1a2b88d1.svg"
+                />
+                <img
+                  src="https://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/maestro-d2055c6b416c46cf134f393e1df6e0ba31722b623870f954afd392092207889c.svg"
+                  alt=""
+                />
+                <img
+                  src="https://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/american_express-2264c9b8b57b23b0b0831827e90cd7bcda2836adc42a912ebedf545dead35b20.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="cardPaymentmethod">
+              <div>
+                <input type="radio" name="btn" id="cashOndelivery" />
+                <label for="">COD</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shiipingaddresChange">
+          <p>Billing Address</p>
+          <span
+            >Select the address that matches your card or payment method. Choose
+            a billing address
+          </span>
+          <div class="shipAddress">
+            <div class="sameAddress">
+              <input type="radio" name="address" id="cardsPayment" checked />
+              <label for=""> Same as shipping address</label>
+            </div>
+            <div class="useDiffrentaddress">
+              <input type="radio" name="address" id="cashOndelivery" />
+              <label for=""> Use a different billing address</label>
+            </div>
+          </div>
+        </div>
+        <div class="kcSubmit">
+          <div class="kcreturnLink">
+            <svg
+              focusable="false"
+              aria-hidden="true"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 10 10"
+            >
+              <path d="M8 1L7 0 3 4 2 5l1 1 4 4 1-1-4-4"></path>
+            </svg>
+            <span id="returnCart">Return to cart</span>
+          </div>
+          <div class="kcontinueBtn">
+            <button id="submit">Continue to shipping</button>
+          </div>
+        </div>
+        <hr />
+        
+      </div>
+      <aside id="sideBar" class="kAside"></aside>
+    </div>
+  </body>
+</html>
+<script type="module">
+  
+</script>
+<script src="script/payment.js"></script>
+<script src="script/asideFunction.js" type="module"></script>

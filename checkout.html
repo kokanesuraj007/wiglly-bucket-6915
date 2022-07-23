@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Beauty products at Sugar cosmetics </title>
+    <script
+      src="https://kit.fontawesome.com/cc7490e492.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href=""
+      type="image/png"
+    />
+    <link rel="stylesheet" href="style/checkout.css" />
+  </head>
+  <body>
+    <div class="kContent">
+      <div class="kMain">
+        <div class="kcHead">
+          <a class="logo logoCenter" href="./index.html"
+            ><img
+              alt="sugar cosmetic"
+              class="logoImage logoImageMedium"
+              src="https://media.sugarcosmetics.com/upload/Logo-static-03.jpg"
+          /></a>
+          <div class="breadCrumb">
+            <p class="kFirst">Cart</p>
+            <i class="fa-solid fa-chevron-right"></i>
+            <p class="kSecond">Information</p>
+            <i class="fa-solid fa-chevron-right"></i>
+            <p class="kThird">Shipping</p>
+            <i class="fa-solid fa-chevron-right"></i>
+            <p class="kFourth">Payment</p>
+          </div>
+        </div>
+        <div class="kc__Main">
+          <h2>Contact information</h2>
+          <div class="kpersonalInfo">
+            <!-- <img
+              src=""
+              alt=""
+            /> -->
+            <div class="kemail">
+              <p id="showUserData"></p>
+              <p id="logOut">Log Out</p>
+            </div>
+          </div>
+          <div class="kCheckbox">
+            <input type="checkbox" id="checkbox" />
+            <label for="">
+              Keep me up to date on news and exclusive offers</label
+            >
+          </div>
+        </div>
+        <div class="kcShippingAddress">
+          <h2>Shipping address</h2>
+          <div class="kcinputForm">
+            <div class="kc__name">
+              <input type="text" id="fname" placeholder="Firstname" />
+              <input type="text" id="lname" placeholder="Lastname" />
+            </div>
+            <input type="text" id="address" placeholder="Address" /><br />
+            <input
+              type="text"
+              id="apartment"
+              placeholder="Apartment,suite,etc.(optinal) "
+            />
+            <div class="cityPin">
+              <input type="text" id="city" placeholder="City" />
+              <input type="text" id="state" placeholder="State" />
+              <input type="text" id="pinCode" placeholder="Pincode" />
+            </div>
+            <input type="text" id="phoneNumber" placeholder="Phone Number" />
+          </div>
+        </div>
+
+        <div class="kcSubmit">
+          <div class="kcreturnLink">
+            <svg
+              focusable="false"
+              aria-hidden="true"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 10 10"
+            >
+              <path d="M8 1L7 0 3 4 2 5l1 1 4 4 1-1-4-4"></path>
+            </svg>
+            <span id="returnCart">Return to cart</span>
+          </div>
+          <div class="kcontinueBtn">
+            <button id="submit">Continue to shipping</button>
+          </div>
+        </div>
+        <hr />
+        
+      </div>
+      <aside id="sideBar" class="kAside"></aside>
+    </div>
+    <!-- <div id="footer"></div> -->
+  </body>
+</html>
+<script type="module">
+  import aside from "./components/aside.js";
+  document.getElementById("sideBar").innerHTML = aside();
+</script>
+<script src="script/checkOut.js"></script>
+<script src="script/asideFunction.js" type="module"></script>
