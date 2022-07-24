@@ -212,24 +212,92 @@ let superSaversarr = [
 ]
 let topPicksArr = [
     [
-     {img_url :"https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/18ec06e5-4071-4a84-ba25-3e46632b6de0.jpg",},
-     {img_url :"https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/ce6539a6-6bff-4f41-8554-4af80d8ffd07.jpg",},
-     {img_url :"https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/8a71a460-cd8f-4166-8ac5-b19407d23699.jpg",},
+     {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/fd0f6532-a765-49b0-9f37-589767135b8c.jpg",},
+     {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/8f437065-e285-4235-b03d-373c62ed8fb6.jpg",},
+     {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/ea865de7-450b-4aa0-8b01-33603f23b625.jpg",},
 
     ],
     [
-     {img_url :"https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/dd4d4e8a-b7e3-485e-8a8c-059f5ccab057.jpg",},
-     {img_url :"https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/18ec06e5-4071-4a84-ba25-3e46632b6de0.jpg",},
-     {img_url :"https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/ce6539a6-6bff-4f41-8554-4af80d8ffd07.jpg",},
+     {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/9fd423af-a5cb-4f1a-ab12-1f6b52aab0e6.jpg",},
+     {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/f178bd9f-daf0-4988-9671-55170f892ff8.jpg",},
+     {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/9ea33475-7063-4301-aab5-260928211b80.jpg",},
 
-    ],
-     [
-     {img_url :"https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/ce6539a6-6bff-4f41-8554-4af80d8ffd07.jpg",},
-     {img_url :"https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/8a71a460-cd8f-4166-8ac5-b19407d23699.jpg",},
-     {img_url :"https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/dd4d4e8a-b7e3-485e-8a8c-059f5ccab057.jpg",},
-
-    ],
+    ]
  ]
+ let giftSetsArr = [
+    [    {
+        img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-matte-as-hell-crayon-lipstick-minis-set-28270316945491.jpg?v=1623073051",
+        name : "MATTE AS HELL CRAYON LIPSTICK..", 
+        price: "1099",
+        text : "SELECT VALUE",
+        stoffPrice : "1799", 
+        disPer:"(38% Off)",
+        rupee : "₹",
+    },
+    {
+        img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_37e8dc88-a720-44ed-a5f3-1e0f0e95bc17.jpg?v=1649692645",
+        name : "DATE NIGHT MAKEUP KIT", 
+        price: "1599",
+        text : "SHOP NOW",
+        stoffPrice : "2193", 
+        disPer:"(27% Off)",
+        rupee : "₹",
+    },
+    {
+        img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-liquid-lipstick-minis-set-15520724582483.jpg?v=1620651966",
+        name : "SMUDGE ME NOT LIQUID LIPSRICK MINIS SET", 
+        price: "799",
+        text : "CHOOSE PRODUCTS",
+        stoffPrice : "999", 
+        disPer:"(20% Off)",
+        rupee : "₹",
+    },
+    {
+        img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/1.jpg?v=1646298577",
+        name : "FACE PALLET + MINI LIQUID LIPSTICK VALUE SET", 
+        price: "849",
+        text : "CHOOSE PRODUCTS",
+        stoffPrice : "1048", 
+        disPer:"(18% Off)",
+        rupee : "₹",
+    },],
+    [    {
+        img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-liquid-lipstick-minis-set-15520724582483.jpg?v=1620651966",
+        name : "SMUDGE ME NOT LIQUID LIPSRICK MINIS SET", 
+        price: "799",
+        text : "CHOOSE PRODUCTS",
+        stoffPrice : "999", 
+        disPer:"(20% Off)",
+        rupee : "₹",
+    },
+    {
+        img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/1.jpg?v=1646298577",
+        name : "FACE PALLET + MINI LIQUID LIPSTICK VALUE SET", 
+        price: "849",
+        text : "CHOOSE PRODUCTS",
+        stoffPrice : "1048", 
+        disPer:"(18% Off)",
+        rupee : "₹",
+    },
+    {
+        img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_0ca61ef7-05ce-49be-9fa1-de7c41b99a1f.jpg?v=1649260645",
+        name : "ANNIVERSARY KIT", 
+        price: "1999",
+        text : "CHOOSE PRODUCTS",
+        stoffPrice : "2793", 
+        disPer:"(28% Off)",
+        rupee : "₹",
+    },
+    {
+        img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/Hi-5-KIT-WBG-Images1_43e43755-262f-4b35-973a-6e5fad7222a4.jpg?v=1643125074",
+        name : "HI-5 KIT", 
+        price: "999",
+        text : "CHOOSE PRODUCTS",
+        stoffPrice : "1295", 
+        disPer:"(22% Off)",
+        rupee : "₹",
+    },],
+]
 
 // top side img frame
 let leftbtn=document.getElementById("leftbtn");
@@ -560,7 +628,7 @@ const clip = document.querySelectorAll(".videoshorts")
     let topPicksdiv = document.querySelector(".tpSlider")
     imageSlide(topPicksArr,topPicksdiv)
     let tpTemp = 0
-     document.querySelector(".tpLarr").addEventListener("click",()=>{
+     document.querySelector(".tpLarr").addEventListener("click",function(){
          
         tpTemp = tpTemp - winWidth
         let final = winWidth*(topPicksArr.length-1)
@@ -576,7 +644,7 @@ const clip = document.querySelectorAll(".videoshorts")
          
      })
  
-     document.querySelector(".tpRarr").addEventListener("click",()=>{
+     document.querySelector(".tpRarr").addEventListener("click",function(){
         
         tpTemp = tpTemp + winWidth
         console.group("right",tpTemp)
@@ -589,5 +657,429 @@ const clip = document.querySelectorAll(".videoshorts")
             tpTemp = 0
         }
      })
- 
+        //GIFTING
+        let giftSetsdiv = document.querySelector(".eleventh_box_slide_div")
+        superSavers(giftSetsArr[0],giftSetsdiv)
+        let gsleft = 0
+        let gsright = 0
+         document.querySelector(".gsleft_arr_div").addEventListener("click",function(){
+             
+             gsleft--
+             if(gsleft>=0){
+                 gsright--
+                 superSavers(giftSetsArr[gsleft],giftSetsdiv)           
+             }else{
+                 gsleft = 1
+                 gsright = 1
+                 superSavers(giftSetsArr[1],giftSetsdiv)
+             }
+             
+         })
+     
+         document.querySelector(".gsright_arr_div").addEventListener("click",function(){
+            gsright++
+            if(gsright<2){
+                gsleft++
+             superSavers(giftSetsArr[gsright],giftSetsdiv)
+            }else{
+                gsleft = 0
+                 gsright = 0
+                superSavers(giftSetsArr[0],giftSetsdiv)
+            }
+         })
 
+         //This or That
+         let thisorthatarr = [
+            [
+             {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/6b7c68f2-b4ae-45cd-9009-4fd44f810858.jpg",},
+             {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/f0fb178d-021b-4e83-95c6-ee4fa373ebfc.jpg",},
+            ]
+         ]
+         let thisorthatdiv = document.querySelector(".twelth_box_div")
+         imageSlide(thisorthatarr,thisorthatdiv)
+
+        // //  Just in
+        let justInArr = [
+            [    {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/Vineeta_s-Favourite-Makeup-kit---WBG-images.jpg?v=1657555460",
+                name : "VINEET'S FAVOURITE MAKEUP KIT", 
+                price: "2999",
+                text : "SELECT SHADE",
+                stoffPrice : "4243", 
+                disPer:"(29% Off)",
+                rupee : "₹",
+            },
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_2d186f9b-9024-4e23-a0d2-a55b7671e89c.jpg?v=1657123108",
+                name : "CONTOUR DE FORCE EYES AND FACE PALETTE ", 
+                price: "1099",
+                text : "CHOOSE PRODUCTS",
+                stoffPrice : "", 
+                disPer:"",
+                rupee : "",
+            },
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/399160329-9-to-5-makeup-kit-wbg-01.jpg?v=1654013564",
+                name : "9 TO 5 MAKEUP KIT ", 
+                price: "999",
+                text : "ADD TO CART ",
+                stoffPrice : "1346", 
+                disPer:"(25% Off)",
+                rupee : "",
+            },
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/Monsoon-Makeup-Kit---WBG-Images_1_66ba2237-0dad-42dc-88ea-c2d45555dd6a.jpg?v=1657814549",
+                name : "MONSOON MAKEUP KIT", 
+                price: "1799",
+                text : "SHOP NOW",
+                stoffPrice : "2344", 
+                disPer:"(23% Off)",
+                rupee : "₹",
+            },],
+            [    {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/2_d5e8f5f6-db6f-43d4-a1ac-1da7b22fdc1b.jpg?v=1652943021",
+                name : "THE MOST ELIGIBLUR CORRECTING PRIMER", 
+                price: "799",
+                text : "CHOOSE PRODUTS",
+                stoffPrice : "", 
+                disPer:"",
+                rupee : "",
+            },
+              {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_1d9f20a6-69b8-4585-9d09-d4d1f8f309d6.jpg?v=1649433263",
+                name : "FLAW LESS FACE MAKEUP TRIO SET", 
+                price: "1199",
+                text : "CHOOSE PRODUTS",
+                stoffPrice : "1390", 
+                disPer:"(14% Off)",
+                rupee : "₹",
+            },
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_61109b87-1ae6-4cb4-8550-5b57d688a4eb.jpg?v=1651852771",
+                name : "BLING LEADER ILLUMINATING SUNSCREEN SPF35 PA+++", 
+                price: "599",
+                text : "SELECT SHADE",
+                stoffPrice : "", 
+                disPer:"",
+                rupee : "",
+            },
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/Value-Set-WBG-1.jpg?v=1642089034",
+                name : "BEGINNERS MAKEUP COMBO", 
+                price: "999",
+                text : "ADD TO CART",
+                stoffPrice : "1190", 
+                disPer:"(16% Off)",
+                rupee : "₹",
+            },],
+            [ {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_1bde8549-cb5e-40e8-8779-83e8c0aae451.jpg?v=1638200716",
+                name : "TOO GOOD TO BE TRUE DUAL EYESHADOW", 
+                price: "499",
+                text : "SHOP NOW",
+                stoffPrice : "", 
+                disPer:"",
+                rupee : "",
+            },   
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_7863c610-04ae-4e21-a5bb-55577898284a.jpg?v=1637336891",
+                name : "OWN THE HIGH LIQUID HIGHLIGHTER", 
+                price: "649",
+                text : "SHOP NOW",
+                stoffPrice : "", 
+                disPer:"",
+                rupee : "",
+            },
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_6.jpg?v=1643903231",
+                name : "TRIPLE DELIGHT MAKEUP SET", 
+                price: "649",
+                text : "CHOOSE PRODUCTS",
+                stoffPrice : "847", 
+                disPer:"(23% Off)",
+                rupee : "₹",
+            },
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/PartyReadyKit-WBG1.png?v=1639397456",
+                name : "PARTY READY KIT", 
+                price: "1299",
+                text : "CHOOSE PRODUCTS",
+                stoffPrice : "1994", 
+                disPer:"(34% Off)",
+                rupee : "₹",
+            },],
+            [ { 
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_7863c610-04ae-4e21-a5bb-55577898284a.jpg?v=1637336891",
+                name : "OWN THE HIGH LIQUID HIGHLIGHTER", 
+                price: "649",
+                text : "SHOP NOW",
+                stoffPrice : "", 
+                disPer:"",
+                rupee : "",
+            },
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_6.jpg?v=1643903231",
+                name : "TRIPLE DELIGHT MAKEUP SET", 
+                price: "649",
+                text : "CHOOSE PRODUCTS",
+                stoffPrice : "847", 
+                disPer:"(23% Off)",
+                rupee : "₹",
+            },
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/Double-Date-Extreme-Volume-Mascara-Powered-by-Images-1025x1400-1.jpg?v=1636386431",
+                name : "DOUBLE DATE EXTREME VOLUME MASCARA DUO 01...", 
+                price: "799",
+                text : "SHOP NOW",
+                stoffPrice : "", 
+                disPer:"",
+                rupee : "",
+            },],
+        ]
+        let justInDiv = document.querySelector(".thirteenth_box_slide_div")
+     superSavers(justInArr[0],justInDiv)
+     let jileft = 0
+     let jiright = 0
+      document.querySelector(".jileft_arr_div").addEventListener("click",function(){
+          
+          jileft--
+          if(jileft>=0){
+              jiright--
+              superSavers(justInArr[jileft],justInDiv)           
+          }else{
+              jileft = 3
+              jiright = 3
+              superSavers(justInArr[3],justInDiv)
+          }
+          
+      })
+  
+      document.querySelector(".jiright_arr_div").addEventListener("click",function(){
+         jiright++
+         if(jiright<4){
+             jileft++
+          superSavers(justInArr[jiright],justInDiv)
+         }else{
+            jileft = 0
+            jiright = 0
+             superSavers(justInArr[0],justInDiv)
+         }
+      })
+
+      //sugar beauty blog
+      let sugarbeautyArr = [
+        [
+            {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/3d42df13-a169-43e3-82a0-e134d709aeb1.jpg",},
+            {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/b3028e28-128b-43a5-be63-de299bdeb1c0.jpg",},
+            {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/159edce9-3429-4cf2-b0cf-573c147f8307.jpg",},
+            {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/5ebe522a-6ae1-440c-bc34-51ddcd47b2a2.jpg",},
+            {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/0f3af3fe-9286-466f-b67f-97e868d1b916.jpg",},
+            {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/26d8c9c5-65f0-4a0b-8eea-3956649cf793.jpg",}, 
+        ]
+    ]
+    let sugarbeautydiv = document.querySelector(".fourteenth_box_div")
+    imageSlide(sugarbeautyArr,sugarbeautydiv)
+
+    //skincare Basic
+
+    let skincareBasicsArr = [
+        [
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/CCLipScrubWBG-3.jpg?v=1628610315", 
+                name : "COFFEE CULTURE LIP SCRUB", 
+                price: "299",
+                text : "ADD TO CART",
+            },
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/Coffee-culture-cleansing-balm-stick-01.jpg?v=1643375708", 
+                name : "COFFEE CULTURE CLEANING BALM STICK", 
+                price: "699",
+                text : "ADD TO CART",
+            },
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/Hyaluronic-Serum-3_1.jpg?v=1626423730", 
+                name : "AQUAHOLIC HYALURONIC SERUM", 
+                price: "499",
+                text : "SELECT SHADE",
+            },
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_61109b87-1ae6-4cb4-8550-5b57d688a4eb.jpg?v=1651852771", 
+                name : "BLING LEADER ILLUMINATING SUNSCREEN SPF35 PA+++", 
+                price: "599",
+                text : "ADD TO CART",
+            },
+           
+        ],
+        [
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/Hydrating-Primer-3.jpg?v=1626423647", 
+                name : "AQUAHOLIC HYDRATING PRIMER", 
+                price: "699",
+                text : "ADD TO CART",
+            },
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_3cb613fc-43c8-4763-b3e6-5ccf4761c0d5.jpg?v=1641570994", 
+                name : "POWER CLAY MASK STICK", 
+                price: "699",
+                text : "ADD TO CART",
+            },
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/Instant-Pore-Cleansing-Mask-1_1.jpg?v=1626423690", 
+                name : "AQUAHOLIC INSTATNT PORE CLEANSING MASK", 
+                price: "499",
+                text : "ADD TO CART",
+            },
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/CCEyeFirmingCreamWBG-3.jpg?v=1628610287", 
+                name : "COFFEE CULTURE EYE FIRMING CREAM", 
+                price: "399",
+                text : "ADD TO CART",
+            },
+           
+        ],
+        [
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_3cb613fc-43c8-4763-b3e6-5ccf4761c0d5.jpg?v=1641570994", 
+                name : "POWER CLAY MASK STICK", 
+                price: "699",
+                text : "ADD TO CART",
+            },
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/Instant-Pore-Cleansing-Mask-1_1.jpg?v=1626423690", 
+                name : "AQUAHOLIC INSTATNT PORE CLEANSING MASK", 
+                price: "499",
+                text : "ADD TO CART",
+            },
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/CCEyeFirmingCreamWBG-3.jpg?v=1628610287", 
+                name : "COFFEE CULTURE EYE FIRMING CREAM", 
+                price: "399",
+                text : "ADD TO CART",
+            },
+            {
+                img_url:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-cheat-sheet-clarifying-mask-12775754203219.jpg?v=1619113702", 
+                name : "CHEAT SHEET CLARIFYING MASK", 
+                price: "99",
+                text : "ADD TO CART",
+            },
+           
+        ],
+    ]
+
+    let skincareBasicDiv = document.querySelector(".fifteenth_box_slide_div")
+     bestSeller(skincareBasicsArr[0],skincareBasicDiv)
+     let sbleft = 0
+     let sbright = 0
+      document.querySelector(".sbleft_arr_div").addEventListener("click",()=>{
+          console.log("i am in");
+          sbleft--
+          if(sbleft>=0){
+              sbright--
+              bestSeller(skincareBasicsArr[sbleft],skincareBasicDiv)           
+          }else{
+              sbleft = 2
+              sbright = 2
+              bestSeller(skincareBasicsArr[2],skincareBasicDiv)
+          }
+          
+      })
+  
+      document.querySelector(".sbright_arr_div").addEventListener("click",()=>{
+        console.log("i am in");
+         sbright++
+         if(sbright<3){
+             sbleft++
+          bestSeller(skincareBasicsArr[sbright],skincareBasicDiv)
+         }else{
+            sbleft = 0
+            sbright = 0
+             bestSeller(skincareBasicsArr[0],skincareBasicDiv)
+         }
+      })
+
+    //   Explore 
+    
+    let exploreArr = [
+        [
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/c6b8c7af-0f0c-480a-b386-e6ce2985e103.jpg",},
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/0a350df5-ba89-40a5-8a8e-e3e617139597.jpg",},
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/3f3d8635-7613-4dab-8c99-a62b05db784f.jpg",},
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/94392987-596e-4b14-b378-86a4b43544c0.jpg",},
+    
+        ],  
+        [
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/76b4a358-adfb-4f52-944b-8bb49f57b4a9.jpg",},
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/c94a0d07-3912-4b78-a502-ee10907b3a63.jpg",},
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/17ea5862-3403-4b13-a7fc-e7736aaeee97.jpg",},
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/c6b8c7af-0f0c-480a-b386-e6ce2985e103.jpg",},
+    
+        ],
+        [
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/0a350df5-ba89-40a5-8a8e-e3e617139597.jpg",},
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/3f3d8635-7613-4dab-8c99-a62b05db784f.jpg",},
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/94392987-596e-4b14-b378-86a4b43544c0.jpg",},
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/76b4a358-adfb-4f52-944b-8bb49f57b4a9.jpg",},
+    
+        ],
+        [
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/c94a0d07-3912-4b78-a502-ee10907b3a63.jpg",},
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/17ea5862-3403-4b13-a7fc-e7736aaeee97.jpg",},
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/c6b8c7af-0f0c-480a-b386-e6ce2985e103.jpg",},
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/0a350df5-ba89-40a5-8a8e-e3e617139597.jpg",},
+    
+        ],
+        [
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/3f3d8635-7613-4dab-8c99-a62b05db784f.jpg",},
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/94392987-596e-4b14-b378-86a4b43544c0.jpg",},
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/76b4a358-adfb-4f52-944b-8bb49f57b4a9.jpg",},
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/c94a0d07-3912-4b78-a502-ee10907b3a63.jpg",},
+    
+        ],
+        [
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/17ea5862-3403-4b13-a7fc-e7736aaeee97.jpg",},
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/c6b8c7af-0f0c-480a-b386-e6ce2985e103.jpg",},
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/0a350df5-ba89-40a5-8a8e-e3e617139597.jpg",},
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/3f3d8635-7613-4dab-8c99-a62b05db784f.jpg",},
+    
+        ],
+        [
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/94392987-596e-4b14-b378-86a4b43544c0.jpg",},
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/76b4a358-adfb-4f52-944b-8bb49f57b4a9.jpg",},
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/c94a0d07-3912-4b78-a502-ee10907b3a63.jpg",},
+         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/17ea5862-3403-4b13-a7fc-e7736aaeee97.jpg",},
+    
+        ],
+     ]
+
+     let exploreDiv = document.querySelector(".exSlider")
+     imageSlide(exploreArr,exploreDiv)
+     let exTemp = 0
+     let winWidth=1263
+      document.querySelector(".exLarr").addEventListener("click",function(){
+          
+         exTemp = exTemp - winWidth
+         let final = winWidth*(exploreArr.length-1)
+        if(exTemp>=0){
+         console.group("left",exTemp)
+         exploreDiv.style.transform = `translate3d(${-exTemp}px,0px,0px)`
+         exploreDiv.style.transition = ".4s"
+        } else{
+         exploreDiv.style.transform = `translate3d(${-final}px,0px,0px)`
+         exploreDiv.style.transition = "0.2s"
+         exTemp = final
+        } 
+          
+      })
+  
+      document.querySelector(".exRarr").addEventListener("click",function(){
+         exTemp = exTemp + winWidth
+         console.group("right",exTemp)
+         if(exTemp<winWidth*(exploreArr.length)){
+             exploreDiv.style.transform = `translate3d(${-exTemp}px,0px,0px)`
+             exploreDiv.style.transition = ".4s"
+         }else{
+             exploreDiv.style.transform = `translate3d(${-0}px,0px,0px)`
+             exploreDiv.style.transition = "0.2s"
+             exTemp = 0
+         }
+      })

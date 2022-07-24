@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: auto;
+          gap: 20px 25px;
+          padding: 50px;
+        }
+        #container > div {
+          text-align: center;
+          border-radius: 0;
+  
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        #container > div > img {
+          width: 70%;
+          padding-top: 20px;
+        }
+        button {
+          width: 320px;
+          height: 25px;
+          border: 0;
+          background-color: black;
+          color: white;
+        }
+        @media only screen and (min-width: 481px) and (max-width: 781px) {
+          #container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+          }
+        }
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          #container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+    </style>
+</head>
+<body>
+    <div id="filter">
+        <img id="sort" src="https://in.sugarcosmetics.com/desc-images/sortIcon.png" alt="sort">
+        <span id="filter1">
+            <select name="" id="select2">
+            <option value="none">Sort</option>
+            <option value="htl">High to Low</option>
+            <option value="lth">Low to High</option>
+            <!-- <option value="rating">rating High to low</option> -->
+        </select>
+           
+        </span>
+    </div>
+    <div id="container"></div>
+</body>
+<script>
+    brushData=[
+   { image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-14_1.jpg?v=1627659982",
+    name: "BLEND TREND EYESHADOW BRUSH - 043 ROUND Xl",
+    price: "Rs:399",
+    rating: "4.8(414)",
+    strike: ""
+},
+{
+image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-12-min.jpg?v=1627573647",
+name: "Blend Trend Dual Face Brush - 075 Powder + … ",
+price: "Rs:599",
+rating: "4.5(141)",
+strike: ""
+},
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-003Contour.jpg?v=1627659996",
+name: "Blend Trend Face Brush - 003 Cont…",
+price: "Rs:399",
+rating: "4.5(121)",
+strike: ""
+},
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFoundationBrush-052Kabuki.jpg?v=1627573664",
+name: "Blend Trend Foundation Brush - 052…",
+price: "Rs:399",
+rating: "4.8(41)",
+strike: ""
+},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-3-min.jpg?v=1627573657",
+name: "Blend Trend Eyeshadow Brush - 042…",
+price: "Rs:499",
+rating: "4.8(142)",
+strike: ""
+},
+
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_1.jpg?v=1630683833",
+name: "Blend Trend Eyeshadow Brush - 042… ",
+price: "Rs:649",
+rating: "4.7(54)",
+strike: "RS.799"},
+
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-007Powder.jpg?v=1627660008",
+name: "Blend Trend Eyeshadow Brush - 042… ",
+price: "Rs:399",
+rating: "4.5(421)",
+strike: ""},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-006Highlighter.jpg?v=1627660002",
+name: "Blend Trend Face Brush - 006 Highl…",
+price: "Rs:399",
+rating: "4.8(197)",
+strike: ""},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-001Blush.jpg?v=1627659984",
+name: "Blend Trend Face Brush - 001 Blush",
+price: "Rs:399",
+rating: "4.9(137)",
+strike: ""},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-2-min.jpg?v=1627573652",
+name: "Blend Trend Eyeshadow Brush - 041…",
+price: "Rs:399",
+rating: "4.5(121)",
+strike: ""},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-5-min.jpg?v=1627573639",
+name: "Blend Trend Dual Eyeshadow Brush…",
+price: "Rs:599",
+rating: "4.6(124)",
+strike: ""},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-13.jpg?v=1627659977",
+name: "Blend Trend Dual Eyeshadow Brush…",
+price: "Rs:599",
+rating: "4.8(201)",
+strike: ""},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFoundationBrush-051Flat.jpg?v=1627573670",
+name: "Blend Trend Foundation Brush - 051…",
+price: "Rs:399",
+rating: "4.6(137)",
+strike: ""},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-002Concealer.jpg?v=1627659990",
+name: "Blend Trend Face Brush - 002 Conc… ",
+price: "Rs:399",
+rating: "4.8(27)",
+strike: ""},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/BeginnersEssentialsCombo1-WBGimages.jpg?v=1630683801",
+name: "Beginners Essential Combo 1",
+price: "Rs:999",
+rating: "4.5(421)",
+strike: "RS.1199"},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/BeginnersEssentialsCombo2-WBGimages.jpg?v=1630683812",
+name: "Beginners Essential Combo 2",
+price: "Rs:799",
+rating: "4.5(421)",
+strike: "RS.999"},
+
+{image_link: "https://cdn.shopify.com/s/files/1/0906/2558/products/BeginnersEssentialsCombo3-WBGimages.jpg?v=1630683820",
+name: "Face Essentials Combo",
+price: "Rs:1499",
+rating: "4.5(421)",
+strike: "RS.1799"}
+
+]
+</script>
+<script>
+    let container = document.getElementById("container");
+    let cartLs = JSON.parse(localStorage.getItem("cart-page")) || [];
+    Display(brushData);
+    document
+    Display(brushData);
+    function Display(data) {
+      data.forEach(function (ele) {
+        let product = document.createElement("div");
+        let image_url = document.createElement("img");
+        image_url.src = ele.image_link;
+
+        let name = document.createElement("h5");
+        name.textContent = ele.name;
+
+        let price = document.createElement("h5");
+        price.textContent = ele.price;
+
+        let rating = document.createElement("h5");
+        rating.textContent = ele.Rating;
+
+        let cart = document.createElement("button");
+        cart.textContent = "Add To Cart";
+        cart.addEventListener("click", function () {
+          AddToCart(ele);
+        });
+
+        product.append(image_url, name, price,rating, cart);
+        container.append(product);
+      });
+    }
+    Display(brushData);
+
+    function AddToCart(product) {
+      for (let i = 0; i < cartLs.length; i++) {
+        if (cartLs[i].image_url === product.image_link) {
+          alert("product already in the cart");
+          return;
+        }
+      }
+      cartLs.push(product);
+      alert("Product Added Successfully");
+      //console.log(cartLs)
+      localStorage.setItem("cart-page", JSON.stringify(cartLs));
+    }
+
+</script>
+</html>
