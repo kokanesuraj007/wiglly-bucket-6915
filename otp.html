@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/otp.css">
+</head>
+
+<body>
+    <div>
+        <h3>Verify OTP</h3>
+        <div class="parent">
+            <div id="otp" >
+              <input  type="text" id="first" maxlength="1" />
+              <input  type="text" id="second" maxlength="1" />
+              <input  type="text" id="third" maxlength="1" />
+              <input  type="text" id="fourth" maxlength="1" />
+            </div>
+            <button id="submit">Submit</button>
+          </div>
+          
+     </div>
+</body>
+<script>
+
+
+    document.getElementById("submit").addEventListener("click", confirm)
+
+    function confirm() {
+        alert("Success")
+        window.location.href = "index.html"
+    }
+
+
+    let finalOtp = [];
+    alert("Your OTP is : 1234 ")
+    function OtpFunctionality() {
+        const inputs = document.querySelectorAll('.userInput > *[id]');
+        for (let i = 0; i < inputs.length; i++) {
+            inputs[i].addEventListener('keydown', function (event) {
+                if (event.key === "Backspace") {
+                    inputs[i].value = '';
+                    if (i !== 0)
+                        inputs[i - 1].focus();
+                } else {
+                    if (i === inputs.length - 1 && inputs[i].value !== '') {
+                        return true;
+                    } else if (event.keyCode > 47 && event.keyCode < 58) {
+                        inputs[i].value = event.key;
+                        if (i !== inputs.length - 1)
+                            inputs[i + 1].focus();
+                        event.preventDefault();
+                    } else if (event.keyCode > 64 && event.keyCode < 91) {
+                        inputs[i].value = String.fromCharCode(event.keyCode);
+                        if (i !== inputs.length - 1)
+                            inputs[i + 1].focus();
+                        event.preventDefault();
+                        finalOtp.push(inputs[i].value)
+                    }
+                }
+            });
+        }
+    }
+    OtpFunctionality();
+
+    document.getElementById("confirm").addEventListener('click', verifyOtp);
+    function verifyOtp() {
+        alert(" Congratulation OTP Verified And Success!!!")
+        window.location.href = "index.html"
+    }
+
+
+
+</script>
+
+</html>

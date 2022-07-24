@@ -30,7 +30,7 @@ function finalPayment() {
   if (card.checked) {
     location.href = "confirmPayment.html";
     localStorage.setItem("shipMethod", "card");
-    alert("your order confirm");
+    alert("please confirm the payment");
   }
 } // Return to cart
 

@@ -439,6 +439,18 @@ header ul li a:hover{
     height: 230px;
      box-sizing: border-box;
 }
+#quickbtn{
+    position: relative;
+    bottom: 200px;
+}
+#leftbtn3{
+    font-size: 25px; 
+}
+#rightbtn3{
+    font-size: 25px;
+    margin-left: 1500px;
+
+}
 #crauserr{
     width: 100vw;
      /* position: relative; */
@@ -469,6 +481,19 @@ header ul li a:hover{
 }
 /* video part  */
 
+#crubtn{
+    position: relative;
+    bottom: 200px;
+    
+
+}
+#rightbtnn{
+    font-size: 25px;
+   margin-left: 1500px;
+}
+#leftbtnn{
+    font-size: 25px; 
+}
 .eighth_box_video_div{
     width: 1263px;
     height: 400px;
