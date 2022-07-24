@@ -3,7 +3,7 @@
 var UserData = JSON.parse(localStorage.getItem("SignUpData"));
 document.getElementById("form").addEventListener("submit", myfunc);
 
-function myfunc(event) {
+function myfunc() {
   event.preventDefault();
   console.log("yes");
   var email = document.getElementById("Email").value;

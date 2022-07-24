@@ -2,7 +2,7 @@ var UserData = JSON.parse(localStorage.getItem("SignUpData"));
 
 document.getElementById("form").addEventListener("submit", myfunc);
 
-function myfunc(event) {
+function myfunc() {
   event.preventDefault();
   console.log("yes");
   let email = document.getElementById("Email").value;
@@ -17,15 +17,15 @@ function myfunc(event) {
   } else {
     var value = false;
     UserData.forEach((element) => {
-        if (element.email == user.Email && element.userPd == user.Password) {
-            value = true;
-            let loginData = {
-                email: element.email,
-                fname: element.FirstName,
-                lname: element.LastName,
-            };
-            localStorage.setItem("user", JSON.stringify(loginData));
-        }
+      if (element.email == user.Email && element.userPd == user.Password) {
+        value = true;
+        let loginData = {
+          email: element.email,
+          fname: element.FirstName,
+          lname: element.LastName,
+        };
+        localStorage.setItem("user", JSON.stringify(loginData));
+      }
     });
     if (value) {
       alert("Login Successful");
@@ -36,4 +36,3 @@ function myfunc(event) {
     }
   }
 }
-

@@ -4,7 +4,7 @@ if (!data) {
   document.getElementById("subTotal").innerText = 0;
 } else {
   let total = 0;
-  data.map((el) => {
+  data.map(function(el) {
     total += el.price;
   });
   if (total !== 0) {
