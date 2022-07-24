@@ -43,7 +43,7 @@ function confirmPage() {
   let cart = [];
   localStorage.setItem("cartItem", JSON.stringify(cart));
   let i = 3;
-  setInterval(() => {
+  setInterval(function() {
     location.href = "../index.html";
   }, 5000);
 }

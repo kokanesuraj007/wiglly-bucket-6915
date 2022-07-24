@@ -19,10 +19,12 @@ function finalPayment() {
   if (cod.checked) {
     localStorage.setItem("shipMethod", "cod");
     location.href = "confirmPayment.html";
+    
   }
   if (card.checked) {
     location.href = "confirmPayment.html";
     localStorage.setItem("shipMethod", "card");
+    alert ("your order confirm")
   }
 }
 // Return to cart

@@ -321,6 +321,12 @@ header ul li a:hover{
 #crauser3{
    width: 100%;
 }
+.fifth_box>h2{
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(67, 64, 64);
+}
 #fifth_box>button{
    /* position: absolute;
    top: 40%; */
@@ -385,15 +391,16 @@ header ul li a:hover{
 } */
 .sixth_box:hover .abs{
     visibility: visible; 
-/* }
-.tenth_box:hover .abs{
-    visibility: visible; 
-}
-.sixteenth_box:hover .abs{
-    visibility: visible;  */
+
 }
 .sixth_box{
     position: relative;
+}
+.sixth_box>h2{
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(67, 64, 64);
 }
 .sixth_box_slide_div{
     /* border: 1px solid; */
@@ -405,6 +412,10 @@ header ul li a:hover{
     position: relative;
     overflow: hidden;
     cursor: pointer;
+}
+.sixth_box_slide_div image{
+    width: 30%;
+    height: 100%;
 }
 .seventh_box > img{
     width: 100%;
@@ -512,6 +523,12 @@ header ul li a:hover{
     font-weight: 500;
     color: rgb(67, 64, 64);
 }
+.ninth_box>h2{
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(67, 64, 64);
+}
 .ninth_box_slide_div{
     display: flex;
     width: 95%;
@@ -574,6 +591,7 @@ header ul li a:hover{
     display: flex;
     height: 300px;
     justify-content: space-evenly;
+    padding-left: 100px;
     margin: auto;
     cursor: pointer;
 }
@@ -581,6 +599,7 @@ header ul li a:hover{
 .twelth_box_div img{
     height: 300px;
     width: 535px;
+    padding-left: 50px;
     margin: auto;
     box-sizing: border-box;
     cursor: pointer;
@@ -605,11 +624,17 @@ header ul li a:hover{
     margin: auto;
     justify-content: space-evenly; 
 }
+.fourteenth_box>h2{
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(67, 64, 64);
+}
 .fourteenth_box_div{
     display: flex;
     height: 300px;
     justify-content: space-evenly;
-    margin: auto;
+    /* margin: auto; */
     cursor: pointer;
 }
 .fourteenth_box_div{
@@ -619,6 +644,12 @@ header ul li a:hover{
     height: 325px;
     cursor: pointer;
     margin: auto;
+}
+.fifteenth_box>h2{
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(67, 64, 64);
 }
 .fifteenth_box_slide_div{
     display: flex;
@@ -637,6 +668,11 @@ header ul li a:hover{
     position: relative;
     overflow: hidden;
     cursor: pointer;
+}.sixteenth_box>h2{
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(67, 64, 64);
 }
  .sixteenth_box_div img{
     width: 285px;
@@ -656,6 +692,7 @@ header ul li a:hover{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
+    text-align: center;
     margin-top: 30px;
     margin-left: 80px;
     cursor: pointer;

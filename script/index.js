@@ -61,11 +61,11 @@ let hotDealsarr = [
         {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/8cd53b0d-bb7e-4842-9ddf-1c8666484ee0.jpg",},
    
     ],
-     [
-        {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/b8278548-ed11-44b4-9818-25c5146c604d.jpg",},
-        {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/7145deaa-8296-49ba-9964-061fded28226.jpg",},
-        {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/2cd03446-33d8-47df-982a-3991ac582be1.jpg",},
-     ],
+    //  [
+    //     {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/b8278548-ed11-44b4-9818-25c5146c604d.jpg",},
+    //     {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/7145deaa-8296-49ba-9964-061fded28226.jpg",},
+    //     {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/2cd03446-33d8-47df-982a-3991ac582be1.jpg",},
+    //  ],
     
 ]
 let imgLinkk = [
@@ -872,9 +872,9 @@ const clip = document.querySelectorAll(".videoshorts")
             {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/3d42df13-a169-43e3-82a0-e134d709aeb1.jpg",},
             {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/b3028e28-128b-43a5-be63-de299bdeb1c0.jpg",},
             {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/159edce9-3429-4cf2-b0cf-573c147f8307.jpg",},
-            {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/5ebe522a-6ae1-440c-bc34-51ddcd47b2a2.jpg",},
-            {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/0f3af3fe-9286-466f-b67f-97e868d1b916.jpg",},
-            {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/26d8c9c5-65f0-4a0b-8eea-3956649cf793.jpg",}, 
+            // {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/5ebe522a-6ae1-440c-bc34-51ddcd47b2a2.jpg",},
+            // {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/0f3af3fe-9286-466f-b67f-97e868d1b916.jpg",},
+            // {img_url :"https://d32baadbbpueqt.cloudfront.net/Homepage/26d8c9c5-65f0-4a0b-8eea-3956649cf793.jpg",}, 
         ]
     ]
     let sugarbeautydiv = document.querySelector(".fourteenth_box_div")
